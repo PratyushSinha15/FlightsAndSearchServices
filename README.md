@@ -18,6 +18,38 @@
     }
     ``` 
 
+## Database Design
+
+    - Airplane Table
+        - ID 
+        - Model_Number
+        - Capacity
+
+    - Flight Table
+        - ID
+        - departure_city_id
+        - destination_city-id
+        - departure
+        - arrival
+
+    - City Table
+        - ID
+        - Name
+
+
+    - Airport
+        - ID
+        - name
+        - city_id
+        - address
+
+    ### Relationship between tables
+
+    1. 1 city can have multiple airports but 1 airports belongs to one city
+    2. Form 1 airport many flights can fly but 1 flight will be flying from only 1 airport
+    3. A flight belong to an airplane but one airplane can be used in multiple flights
+
+    
 
 
 
